@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	<name>Social Media</name>
+	<author>Lukas Plycneris</author>
+	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
+	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
+	<version>1.0.0</version>
+	<description>Responsive Social Media Feed for website</description>
+	<files>
+		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
+		<filename>index.html</filename>
+		<filename>core.php</filename>
+		<filename>style.php</filename>
+		<filename>mod_socialmedia.xml</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>		
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_socialmedia.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_socialmedia.sys.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_socialmedia.ini</language>
+		<language tag="lt-LT">lt-LT/lt-LT.mod_socialmedia.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="media_type" type="list" default="facebook" label="MOD_SOCIALMEDIA_SELECT_TYPE">
+				<option value="facebook">Facebook Feed</option>
+				<option value="instagram">Instagram Feed</option>
+			</field>
+			<field name="media_layout" type="list" default="default" label="MOD_SOCIALMEDIA_SELECT_TYPE">
+				<option value="default">Default</option>
+				<!-- <option value="masonry">Masonry</option>
+				<option value="widget">Widget</option>
+				<option value="carousel">Carousel</option> -->
+			</field>
+			<field name="access_token" type="text" label="MOD_SOCIALMEDIA_ACCESS_TOKEN"></field>
+			<field name="page_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_PAGE_ID"></field>
+			<field name="client_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_ID"></field>
+			<field name="client_secret" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_SECRET"></field>
+			<field name="max_items" type="number" min="4" max="20" default="4" label="MOD_SOCIALMEDIA_MAX_ITEMS"></field>
+			<field name="cache_time" type="number" min="1000" default="1000" label="MOD_SOCIALMEDIA_CACHE_TIME"></field>
+			</fieldset>
+			<fieldset name="Backup" label="MOD_SOCIALMEDIA_SYS_TAB_BACKUP">
+				 <field name="store_token" label="MOD_SOCIALMEDIA_TOKEN_BACKUP" type="text"></field>
+			</fieldset>
+				<fieldset name="external" label="MOD_SOCIALMEDIA_SYS_TAB_EXTERNAL">
+				<field
+						name="external_css"
+						type="repeatable"	
+						icon="list"
+						label="MOD_SOCIALMEDIA_EXTERNAL_CSS">
+						<fields name="url">
+								<field
+										name="url"
+										type="text"
+										label="url"
+								/>
+						</fields>
+				</field>
+						<field
+						name="external_js"
+						type="repeatable"
+						icon="list"
+						label="MOD_SOCIALMEDIA_EXTERNAL_JS">
+						<fields name="url">
+								<field
+										name="url"
+										type="text"
+										label="url"
+								/>
+						</fields>
+				</field>
+			</fieldset>
+				<fieldset name="style" label="MOD_SOCIALMEDIA_SYS_TAB_STYLE">
+					<field name="show_module_title" default="0" type="radio" label="MOD_SOCIALMEDIA_SHOW_MODULE_TITLE" class="btn-group btn-group-yesno" filter="integer">
+						<option value="1">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_YES</option>
+						<option value="0">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_NO</option>
+					</field>
+					<field name="container_width" type="number" default="1230" label="MOD_SOCIALMEDIA_MAX_WIDTH"></field>
+					<field name="container_margin_top" type="number" default="30" label="MOD_SOCIALMEDIA_MARGIN_TOP"></field>
+					<field name="container_margin_bottom" type="number" default="30" label="MOD_SOCIALMEDIA_MARGIN_BOTTOM"></field>
+					<field name="show_media_logo" default="1" type="radio" label="MOD_SOCIALMEDIA_SHOW_MEDIA_LOGO" class="btn-group btn-group-yesno" filter="integer">
+						<option value="1">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_YES</option>
+						<option value="0">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_NO</option>
+					</field>
+					<field name="show_card_footer" default="1" type="radio" showon="media_type:facebook" label="MOD_SOCIALMEDIA_SHOW_CARD_FOOTER" class="btn-group btn-group-yesno" filter="integer">
+						<option value="1">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_YES</option>
+						<option value="0">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_NO</option>
+					</field>
+					<field name="card_text_color" type="color" default="#666666" label="MOD_SOCIALMEDIA_CARD_TEXT_COLOR" />
+					<field name="card_links_color" type="color" default="#78003f" label="MOD_SOCIALMEDIA_CARD_LINKS_COLOR" />
+					<field name="card_button_color" type="color" default="#78003f" label="MOD_SOCIALMEDIA_CARD_BUTTON_COLOR" />
+					<field name="card_background_color" type="color" default="#f6f6f6" label="MOD_SOCIALMEDIA_CARD_BACKGROUND_COLOR" />
+					<field name="card_text_size" type="number" default="15" label="MOD_SOCIALMEDIA_CARD_TEXT_SIZE"></field>
+					<field name="card_button_size" type="number" default="15" label="MOD_SOCIALMEDIA_CARD_BUTTON_SIZE"></field>
+			</fieldset>
+		</fields>
+	</config>
+	 <updateservers>
+			<server type="extension" priority="1" name="Social media">https://extensions.itpc.vu.lt/modules/mod_socialmedia/updates.xml</server>
+	</updateservers>
+</extension>
