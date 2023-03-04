@@ -21,6 +21,8 @@ The Social Media module is a Joomla extension designed to provide a responsive a
 
 </div>
 
+> I wanted to let you know that my module is currently not compatible with Joomla 4. As you may be aware, Joomla 4 will be adopted in the near future, and I am working on making my module compatible with this new version. I apologize for any inconvenience this may cause and appreciate your patience as I work towards making my module fully functional with Joomla 4. In the meantime, I recommend using my module with Joomla 3 or earlier versions.
+
 <!-- TABLE OF CONTENTS -->
 
 <details open>
