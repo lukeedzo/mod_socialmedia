@@ -205,7 +205,7 @@ One important thing to note is that the access token will be refreshed automatic
 ### Sass and Js compilation
 
 ```
-cd modules/mod_vu_instagram/build/
+cd modules/mod_socialmedia/build/
 npm install 
 npm run dev
 ```
