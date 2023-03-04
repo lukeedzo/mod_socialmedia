@@ -59,7 +59,7 @@ class SocialMediaStyle extends SocialMedia
 								font-size: {$card_text_size}px!important;
 						}
 						.social-medlia-container-{$module_id} .setting-text a {
-								color: {$inks_color}!important;
+								color: {$links_color}!important;
 						}
 						.social-media-container-{$module_id} button {
 								color: {$button_color}!important;

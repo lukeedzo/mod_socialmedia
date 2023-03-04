@@ -298,7 +298,7 @@ class SocialMedia
         } else if ($layout_type === 'facebook') {
             $this->refreshToken("facebook-token{$module_id}", $api['token'], $module_id);
             $feed_data = $this->decode($this->cache($layout_type, $api['feed'], $cache_time, SocialMedia::MODULE_NAME, $module_id));
-            $profile_data = $this->decode($this->cache($layout_type . '-profile', $api['profile_endpoint'], $cache_time, SocialMedia::MODULE_NAME, $module_id));
+            // $profile_data = $this->decode($this->cache($layout_type . '-profile', $api['profile_endpoint'], $cache_time, SocialMedia::MODULE_NAME, $module_id));
             $output = $this->reorganizeSocialMediaData($feed_data, 'facebook', $access_token, $params);
         }
 
