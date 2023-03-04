@@ -98,6 +98,6 @@
 		</fields>
 	</config>
 	 <updateservers>
-			<server type="extension" priority="1" name="Social media">https://extensions.itpc.vu.lt/modules/mod_socialmedia/updates.xml</server>
+			<server type="extension" priority="1" name="Social media">https://plycneris.com/updates/joomla/mod_socialmedia/updates.xml</server>
 	</updateservers>
 </extension>
