@@ -17,7 +17,7 @@ The Social Media module is a Joomla extension designed to provide a responsive a
     <a href="https://www.joomla.org/">Joomla</a>
   </p>
 
-[![Build status](https://img.shields.io/badge/Joomla-v3.0-green)](https://ci.appveyor.com/project/release-joomla/joomla-cms) &nbsp; [![PHP](https://img.shields.io/badge/PHP-V7.4.1-green)](https://www.php.net/) &nbsp; [![node-lts](https://img.shields.io/badge/Node-V16.13-green)](https://nodejs.org/en/) &nbsp; [![npm](https://img.shields.io/badge/npm-v8.19.2-green)](https://nodejs.org/en/)
+[![Build status](https://img.shields.io/badge/Joomla-v3.0-green)](https://ci.appveyor.com/project/release-joomla/joomla-cms) &nbsp; [![PHP](https://img.shields.io/badge/PHP-V8.1.0-green)](https://www.php.net/) &nbsp; [![node-lts](https://img.shields.io/badge/Node-V16.13-green)](https://nodejs.org/en/) &nbsp; [![npm](https://img.shields.io/badge/npm-v8.19.2-green)](https://nodejs.org/en/)
 
 </div>
 
