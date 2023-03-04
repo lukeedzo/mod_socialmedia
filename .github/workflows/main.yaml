@@ -31,5 +31,5 @@ jobs:
           server: ${{ secrets.SERVER_NAME }}
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASS }}
-          local-dir: ./modules/com_profiles/build/package/
+          local-dir: ./modules/mod_socialmedia/build/package/
           server-dir: ${{ secrets.SERVER_DIR }}
