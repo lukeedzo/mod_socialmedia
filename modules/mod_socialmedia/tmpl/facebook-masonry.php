@@ -10,7 +10,9 @@ defined('_JEXEC') or die;
  *
  * @author      Lukas Plycneris lukasplycneris@protonmail.com
  * @copyright   Copyright (C) 2023 Lukas Plyceris. All rights reserved
- */
+ */?>
 
-;?>
-
+<div class="grid">
+	<div class="grid-item">
+	</div>
+</div>

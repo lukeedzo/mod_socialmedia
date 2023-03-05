@@ -30,8 +30,8 @@
 			</field>
 			<field name="media_layout" type="list" default="default" label="MOD_SOCIALMEDIA_SELECT_TYPE">
 				<option value="default">Default</option>
-				<!-- <option value="masonry">Masonry</option>
-				<option value="widget">Widget</option>
+				<option value="masonry">Masonry</option>
+				<!-- <option value="widget">Widget</option>
 				<option value="carousel">Carousel</option> -->
 			</field>
 			<field name="access_token" type="text" label="MOD_SOCIALMEDIA_ACCESS_TOKEN"></field>

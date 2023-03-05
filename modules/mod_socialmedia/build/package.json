@@ -21,6 +21,7 @@
 		"gulp-uglify": "^3.0.2",
 		"gulp-zip": "^5.1.0",
 		"gulp4-run-sequence": "^1.0.1",
+		"masonry-layout": "^4.2.2",
 		"path": "^0.12.7",
 		"require-dir": "^1.2.0",
 		"sass": "^1.55.0",

@@ -3,6 +3,9 @@ const config = require('../config');
 
 run.task('watch', (cb) => {
   run.watch('./src/scss/*.scss', run.series('build-front-css'));
-  run.watch('./src/js/**/*.js', run.series('build-scripts'));
+  run.watch(
+    './src/js/**/*.js',
+    run.series('build-default-js', 'build-masonry-js')
+  );
   cb();
 });

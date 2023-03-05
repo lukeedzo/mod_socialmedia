@@ -13,7 +13,7 @@ const buildScripts = (task, src, dest, filename) => {
         webpack({
           mode: 'production',
           optimization: {
-            minimize: true,
+            minimize: false,
           },
         })
       )
@@ -23,9 +23,10 @@ const buildScripts = (task, src, dest, filename) => {
         })
       )
       .pipe(uglify())
-      .pipe(rename({ suffix: '.min' }))
+      .pipe(rename({ suffix: '.min', basename: filename })) // add basename option
       .pipe(run.dest(dest));
   });
 };
 
-buildScripts('build-scripts', config.js.facebook_default, config.js.dest);
+buildScripts('build-default-js', config.js.default, config.js.dest, 'default');
+buildScripts('build-masonry-js', config.js.masonry, config.js.dest, 'masonry');

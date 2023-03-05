@@ -8,7 +8,8 @@ module.exports = {
   },
 
   js: {
-    facebook_default: './src/js/index.js',
+    default: './src/js/default.js',
+    masonry: './src/js/masonry.js',
     dest: '../assets/js/',
   },
 
