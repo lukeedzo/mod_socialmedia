@@ -4,7 +4,7 @@
 	<author>Lukas Plycneris</author>
 	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
 	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>Responsive Social Media Feed for website</description>
 	<files>
 		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
