@@ -1,6 +1,4 @@
-<?php
-
-defined('_JEXEC') or die;
+<?php defined('_JEXEC') or die;
 
 /**
  * @version     CVS: 1.0.0
@@ -13,30 +11,28 @@ defined('_JEXEC') or die;
 
 $showMediaLogo = $params->get('show_media_logo');
 $showCardFooter = $params->get('show_card_footer');
-$moduleTitle = $params->get('show_module_title');
-?>
+$moduleTitle = $params->get('show_module_title');?>
 
 <div class="social-media-container-<?php echo $module->id; ?> social-media-facebook">
  <?php if ($moduleTitle == 1): ?>
 	 <h3 class="social-media-container__title"><?php echo $module->title ?></h3>
  <?php endif;?>
-
  <div class="social-media-default">
 	 <?php foreach ($output as $post): ?>
 		 <div class="social-media-default__card setting-card">
+				<?php if (isset($post->picture)): ?>
 			 <div class="social-media-default__card-header">
 				 <a href="<?php echo $post->url; ?>">
 					 <img src="<?php echo $post->picture ?>">
 				 </a>
 			 </div>
-
+			 <?php endif?>
 			 <div class="social-media-default__card-body">
 				 <?php if ($showMediaLogo == 1): ?>
 					 <div class="social-media-default__card-body-logo">
 					 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><circle cx="12" cy="12" r="10" fill="#0076FB"></circle><path fill="#FFF" d="M16.167 6.167v2.639h-1.842a1.04 1.04 0 00-1.048 1.03v2.04h2.843l-.393 2.935h-2.45v7.067a10.457 10.457 0 01-2.982.03v-7.097H7.833v-2.934h2.462V9.412c0-1.792 1.477-3.245 3.298-3.245h2.574z"></path></g></svg>
 					 </div>
 				 <?php endif;?>
-
 				 <div class="social-media-default__card-body-content">
 					 <div class="social-media-default__card-body-content-container collapsed">
 						 <div class="setting-text">
@@ -45,7 +41,6 @@ $moduleTitle = $params->get('show_module_title');
 					 </div>
 				 </div>
 			 </div>
-
 			 <?php if ($showCardFooter == 1): ?>
 				 <div class="social-media-default__card-footer">
 					 <div class="social-media-default__card-footer-icons setting-text">

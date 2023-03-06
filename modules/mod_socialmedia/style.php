@@ -39,6 +39,7 @@ class SocialMediaStyle extends SocialMedia
         // Get text, link, button, and card background colors
         $text_color = $params->get('card_text_color');
         $links_color = $params->get('card_links_color');
+        $links_hover_color = $params->get('card_links_hover_color');
         $button_color = $params->get('card_button_color');
         $card_bg_color = $params->get('card_background_color');
 
@@ -60,6 +61,9 @@ class SocialMediaStyle extends SocialMedia
 						}
 						.social-medlia-container-{$module_id} .setting-text a {
 								color: {$links_color}!important;
+						}
+						.social-medlia-container-{$module_id} .setting-text a::hover {
+							color: {$links_hover_color}!important;
 						}
 						.social-media-container-{$module_id} button {
 								color: {$button_color}!important;
@@ -91,10 +95,60 @@ class SocialMediaStyle extends SocialMedia
         // Add layout-specific styles
         switch ($params->get('media_layout')) {
             case 'default':
-                // Add default layout-specific styles here
+                $table_responsive = $params->get('default_on_tablets');
+                $small_table_responsive = $params->get('default_on_small_tablets');
+                $mobile_portrait = $params->get('default_on_mobile_portrait');
+                $mobile = $params->get('default_on_mobile');
+                $css .= "
+									@media screen and (max-width: 991px) {
+										.social-media-container-{$module_id} .social-media-default__card  {
+											width: calc({$table_responsive}% - 20px);
+										}
+									}
+									@media screen and (max-width: 767px) {
+										.social-media-container-{$module_id} .social-media-default__card {
+											width: calc({$small_table_responsive}% - 20px);
+										}
+									}
+									@media screen and (max-width: 657px) {
+										.social-media-container-{$module_id} .social-media-default__card {
+											width: calc({$mobile_portrait}% - 20px);
+										}
+									}
+									@media screen and (max-width: 575px) {
+										.social-media-container-{$module_id} .social-media-default__card {
+											width: calc({$mobile}% - 20px);
+										}
+									}
+								";
                 break;
             case 'masonry':
-                // Add masonry layout-specific styles here
+                $table_responsive = $params->get('masonry_on_tablets');
+                $small_table_responsive = $params->get('masonry_on_small_tablets');
+                $mobible_portrait = $params->get('masonry_on_mobile_portrait');
+                $mobile = $params->get('masonry_on_mobile');
+                $css .= "
+									@media screen and (max-width: 991px) {
+										.social-media-container-{$module_id} .social-media-masonry__grid-item {
+											width: {$table_responsive}%;
+										}
+									}
+									@media screen and (max-width: 767px) {
+										.social-media-container-{$module_id} .social-media-masonry__grid-item {
+											width: {$small_table_responsive}%;
+										}
+									}
+									@media screen and (max-width: 657px) {
+										.social-media-container-{$module_id} .social-media-masonry__grid-item {
+											width: {$mobible_portrait}%;
+										}
+									}
+									@media screen and (max-width: 575px) {
+										.social-media-container-{$module_id} .social-media-masonry__grid-item {
+											width: {$mobile}%;
+										}
+									}
+								";
                 break;
             case 'widget':
                 // Add widget layout-specific styles here

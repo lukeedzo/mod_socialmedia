@@ -3,9 +3,6 @@
     margin: 0px 0px 16px 10px;
   }
 }
-.social-media-instagram .social-media-default__card-body-logo svg {
-  max-width: 28px !important;
-}
 
 .social-media-default {
   display: flex;
@@ -87,8 +84,8 @@
       margin-top: 20px;
       text-align: center;
 
-      img {
-        max-width: 28px;
+      svg {
+        max-width: 25px;
       }
     }
 
@@ -113,24 +110,6 @@
         display: block;
         margin-top: 20px;
       }
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    &__card {
-      width: calc(50% - 20px);
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    &__card {
-      width: calc(50% - 20px);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    &__card {
-      width: calc(100% - 20px);
     }
   }
 }

@@ -289,7 +289,7 @@ class SocialMedia
 
         $layout_path = JModuleHelper::getLayoutPath(SocialMedia::MODULE_NAME, $layout_type . '-' . $layout_name);
         $layout_css_path = 'modules/' . SocialMedia::MODULE_NAME . '/assets/css/' . $layout_type . '-' . $layout_name . '.min.css';
-        $layout_js_path = 'modules/' . SocialMedia::MODULE_NAME . '/assets/js/main.min.js';
+        $layout_js_path = 'modules/' . SocialMedia::MODULE_NAME . '/assets/js/' . $layout_name . '.min.js';
 
         if ($layout_type === 'instagram') {
             $this->refreshToken("instagram-token{$module_id}", $api['token'], $module_id);
