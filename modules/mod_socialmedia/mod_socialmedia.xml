@@ -4,7 +4,7 @@
 	<author>Lukas Plycneris</author>
 	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
 	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Responsive Social Media Feed for website</description>
 	<files>
 		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
@@ -90,10 +90,22 @@
 					</field>
 					<field name="card_text_color" type="color" default="#666666" label="MOD_SOCIALMEDIA_CARD_TEXT_COLOR" />
 					<field name="card_links_color" type="color" default="#78003f" label="MOD_SOCIALMEDIA_CARD_LINKS_COLOR" />
+					<field name="card_links_hover_color" type="color" default="#78003f" label="MOD_SOCIALMEDIA_CARD_LINKS_HOVER_COLOR" />
 					<field name="card_button_color" type="color" default="#78003f" label="MOD_SOCIALMEDIA_CARD_BUTTON_COLOR" />
 					<field name="card_background_color" type="color" default="#f6f6f6" label="MOD_SOCIALMEDIA_CARD_BACKGROUND_COLOR" />
 					<field name="card_text_size" type="number" default="15" label="MOD_SOCIALMEDIA_CARD_TEXT_SIZE"></field>
 					<field name="card_button_size" type="number" default="15" label="MOD_SOCIALMEDIA_CARD_BUTTON_SIZE"></field>
+					<field name="responsive" type="note" label="Responsive" />
+
+					<field name="default_on_tablets" showon="media_layout:default" type="number" default="32" label="MOD_SOCIALMEDIA_TABLETS_LABEL" description="MOD_SOCIALMEDIA_TABLETS_DESCRIPTION"></field>
+					<field name="default_on_small_tablets" showon="media_layout:default" type="number" default="50" label="MOD_SOCIALMEDIA_SMALL_TABLETS_LABEL" description="MOD_SOCIALMEDIA_SMALL_TABLETS_DESCRIPTION"></field>
+					<field name="default_on_mobile_portrait" showon="media_layout:default" type="number" default="48" label="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_LABEL" description="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_DESCRIPTION"></field>
+					<field name="default_on_mobile" showon="media_layout:default" type="number" default="100" label="MOD_SOCIALMEDIA_MOBILE_LABEL" description="MOD_SOCIALMEDIA_MOBILE_DESCRIPTION"></field>
+
+					<field name="masonry_on_tablets" showon="media_layout:masonry" type="number" default="32" label="MOD_SOCIALMEDIA_TABLETS_LABEL" description="MOD_SOCIALMEDIA_TABLETS_DESCRIPTION"></field>
+					<field name="masonry_on_small_tablets" showon="media_layout:masonry" type="number" default="32" label="MOD_SOCIALMEDIA_SMALL_TABLETS_LABEL" description="MOD_SOCIALMEDIA_SMALL_TABLETS_DESCRIPTION"></field>
+					<field name="masonry_on_mobile_portrait" showon="media_layout:masonry" type="number" default="48" label="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_LABEL" description="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_DESCRIPTION"></field>
+					<field name="masonry_on_mobile" showon="media_layout:masonry" type="number" default="100" label="MOD_SOCIALMEDIA_MOBILE_LABEL" description="MOD_SOCIALMEDIA_MOBILE_DESCRIPTION"></field>
 			</fieldset>
 		</fields>
 	</config>

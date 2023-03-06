@@ -85,7 +85,7 @@
       text-align: center;
 
       svg {
-        max-width: 35px;
+        max-width: 30px;
       }
     }
 
@@ -110,24 +110,6 @@
         display: block;
         margin-top: 20px;
       }
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    &__card {
-      width: calc(50% - 20px);
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    &__card {
-      width: calc(50% - 20px);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    &__card {
-      width: calc(100% - 20px);
     }
   }
 }
