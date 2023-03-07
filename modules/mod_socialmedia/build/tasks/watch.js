@@ -5,7 +5,7 @@ run.task('watch', (cb) => {
   run.watch('./src/scss/*.scss', run.series('build-front-css'));
   run.watch(
     './src/js/**/*.js',
-    run.series('build-default-js', 'build-masonry-js')
+    run.series('build-default-js', 'build-masonry-js', 'build-carousel-js')
   );
   cb();
 });

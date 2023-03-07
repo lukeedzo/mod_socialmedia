@@ -1,6 +1,4 @@
-<?php
-
-defined('_JEXEC') or die;
+<?php defined('_JEXEC') or die;
 
 /**
  * @version     CVS: 1.0.0
@@ -98,7 +96,7 @@ class SocialMedia
      */
     public function getFacebookEventDetails($event_id, $access_token, $type, $params)
     {
-        $cache_time = $params->get('cache_time');
+        $cache_time = (int) $params->get('cache_time');
         $url = 'https://graph.facebook.com/v16.0/' . $event_id . '?fields=name,start_time,description,place&access_token=' . $access_token;
         $event = $this->decode($this->cache("{$type}-event{$event_id}", $url, $cache_time, SocialMedia::MODULE_NAME));
 
@@ -257,7 +255,7 @@ class SocialMedia
         $module = JTable::getInstance('module');
         $module->load((int) $module_id);
         $params = new JRegistry($module->params);
-        $cache_time = $params->get('cache_time');
+        $cache_time = (int) $params->get('cache_time');
         $old_token = $params->get('access_token', $params->get('store_token'));
         $new_token = $this->decode($this->cache($file, $url . $old_token, $cache_time, SocialMedia::MODULE_NAME, $module_id))->access_token;
         $params->set('access_token', $new_token);
@@ -282,7 +280,7 @@ class SocialMedia
         $api = $this->getAPI($params);
         $doc = JFactory::getDocument();
 
-        $cache_time = $params->get('cache_time');
+        $cache_time = (int) $params->get('cache_time');
         $layout_type = $params->get('media_type');
         $layout_name = $params->get('media_layout');
         $access_token = $params->get('access_token');

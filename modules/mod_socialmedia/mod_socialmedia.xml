@@ -4,7 +4,7 @@
 	<author>Lukas Plycneris</author>
 	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
 	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>Responsive Social Media Feed for website</description>
 	<files>
 		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
@@ -31,8 +31,8 @@
 			<field name="media_layout" type="list" default="default" label="MOD_SOCIALMEDIA_SELECT_TYPE">
 				<option value="default">Default</option>
 				<option value="masonry">Masonry</option>
-				<!-- <option value="widget">Widget</option>
-				<option value="carousel">Carousel</option> -->
+				<option value="carousel">Carousel</option>
+				<!-- <option value="widget">Widget</option> -->
 			</field>
 			<field name="access_token" type="text" label="MOD_SOCIALMEDIA_ACCESS_TOKEN"></field>
 			<field name="page_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_PAGE_ID"></field>

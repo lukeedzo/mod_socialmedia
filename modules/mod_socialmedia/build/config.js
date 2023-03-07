@@ -1,6 +1,6 @@
 module.exports = {
   // module version
-  version: '1.0.2',
+  version: '1.0.3',
 
   css: {
     front_src: './src/scss/*.scss',
@@ -10,6 +10,7 @@ module.exports = {
   js: {
     default: './src/js/default.js',
     masonry: './src/js/masonry.js',
+    carousel: './src/js/carousel.js',
     dest: '../assets/js/',
   },
 
