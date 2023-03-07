@@ -120,7 +120,7 @@ class SocialMedia
      *
      * @return mixed The cached content.
      */
-    private function cache($file, $url, $cache_time = 60, $cache_group = SocialMedia::MODULE_NAME, $module_id = 0)
+    private function cache($file, $url, int $cache_time, $cache_group = SocialMedia::MODULE_NAME, $module_id = 0)
     {
         $cache = JFactory::getCache($cache_group, '');
         $cache->setCaching(true);
