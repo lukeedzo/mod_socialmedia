@@ -39,7 +39,7 @@
 			<field name="client_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_ID"></field>
 			<field name="client_secret" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_SECRET"></field>
 			<field name="max_items" type="number" min="4" max="20" default="4" label="MOD_SOCIALMEDIA_MAX_ITEMS"></field>
-			<field name="cache_time" type="number" min="60" default="60" label="MOD_SOCIALMEDIA_CACHE_TIME"></field>
+			<field name="cache_time" type="number" default="60" label="MOD_SOCIALMEDIA_CACHE_TIME"></field>
 			</fieldset>
 			<fieldset name="Backup" label="MOD_SOCIALMEDIA_SYS_TAB_BACKUP">
 				 <field name="store_token" label="MOD_SOCIALMEDIA_TOKEN_BACKUP" type="text"></field>
