@@ -3,7 +3,7 @@ const lang = document.documentElement.getAttribute('lang');
 function showMoreButtonTranslate(params) {
   let showMoreTextTranslate;
   let showLessTextTranslate;
-  if (lang === 'lt-lt' && lang === 'lt-LT') {
+  if (lang === 'lt-lt' || lang === 'lt-LT') {
     showMoreTextTranslate = 'Rodyti daugiau';
     showLessTextTranslate = 'Rodyti mažiau';
   } else {
