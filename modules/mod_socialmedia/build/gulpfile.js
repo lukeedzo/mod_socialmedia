@@ -7,7 +7,12 @@ requireDir('./tasks', { recurse: true });
 // Build css and js
 run.task('dev', (cb) => {
   runSequence(
-    run.series('build-front-css', 'build-default-js', 'build-masonry-js'),
+    run.series(
+      'build-front-css',
+      'build-default-js',
+      'build-masonry-js',
+      'build-carousel-js'
+    ),
     'watch'
   );
   cb();

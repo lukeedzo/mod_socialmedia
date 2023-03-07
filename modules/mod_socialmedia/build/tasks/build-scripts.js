@@ -30,3 +30,9 @@ const buildScripts = (task, src, dest, filename) => {
 
 buildScripts('build-default-js', config.js.default, config.js.dest, 'default');
 buildScripts('build-masonry-js', config.js.masonry, config.js.dest, 'masonry');
+buildScripts(
+  'build-carousel-js',
+  config.js.carousel,
+  config.js.dest,
+  'carousel'
+);

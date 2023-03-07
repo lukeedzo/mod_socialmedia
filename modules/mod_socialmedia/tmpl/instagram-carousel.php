@@ -1,7 +1,4 @@
-
-<?php
-
-defined('_JEXEC') or die;
+<?php defined('_JEXEC') or die;
 
 /**
  * @version     CVS: 1.0.0
