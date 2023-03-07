@@ -4,7 +4,7 @@
 	<author>Lukas Plycneris</author>
 	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
 	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<description>Responsive Social Media Feed for website</description>
 	<files>
 		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
@@ -39,7 +39,7 @@
 			<field name="client_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_ID"></field>
 			<field name="client_secret" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_CLIENT_SECRET"></field>
 			<field name="max_items" type="number" min="4" max="20" default="4" label="MOD_SOCIALMEDIA_MAX_ITEMS"></field>
-			<field name="cache_time" type="number" min="1000" default="1000" label="MOD_SOCIALMEDIA_CACHE_TIME"></field>
+			<field name="cache_time" type="number" min="60" default="60" label="MOD_SOCIALMEDIA_CACHE_TIME"></field>
 			</fieldset>
 			<fieldset name="Backup" label="MOD_SOCIALMEDIA_SYS_TAB_BACKUP">
 				 <field name="store_token" label="MOD_SOCIALMEDIA_TOKEN_BACKUP" type="text"></field>
