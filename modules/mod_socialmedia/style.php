@@ -1,4 +1,3 @@
-
 <?php
 
 defined('_JEXEC') or die;
@@ -30,6 +29,7 @@ class SocialMediaStyle extends SocialMedia
         // Get the module and its parameters
         $get_module = $this->getModuleWithParams($module_id);
         $params = $get_module->params;
+        $module = $get_module->module;
 
         // Get container margins and width
         $container_width = $params->get('container_width');
@@ -150,8 +150,18 @@ class SocialMediaStyle extends SocialMedia
 									}
 								";
                 break;
-            case 'widget':
-                // Add widget layout-specific styles here
+            case 'carousel':
+                $loop = $params->get('carousel_loop');
+                $autoplay = $params->get('carousel_autoplay');
+                $per_view = $params->get('carousel_slidesperview');
+                $options = [
+                    "id" => (int) $module->id,
+                    "slidesPerView" => (int) $per_view,
+                    "loop" => (int) $loop,
+                    "autoplay" => (int) $autoplay,
+                ];
+
+                echo '<script id="social-media-carousel-json-' . $module->id . '" type="application/json">' . json_encode($options) . '</script>';
                 break;
             case 'widget':
                 // Add widget layout-specific styles here
