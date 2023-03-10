@@ -12,6 +12,14 @@ const buildScripts = (task, src, dest, filename) => {
       .pipe(
         webpack({
           mode: 'production',
+          module: {
+            rules: [
+              {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+              },
+            ],
+          },
           optimization: {
             minimize: false,
           },
