@@ -4,7 +4,7 @@
 	<author>Lukas Plycneris</author>
 	<authorEmail>lukasplycneris@protonmail.com</authorEmail>
 	<copyright>Copyright (C) 2023 Lukas Plycneris</copyright>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<description>Responsive Social Media Feed for website</description>
 	<files>
 		<filename module="mod_socialmedia">mod_socialmedia.php</filename>
@@ -32,7 +32,7 @@
 				<option value="default">Default</option>
 				<option value="masonry">Masonry</option>
 				<option value="carousel">Carousel</option>
-				<!-- <option value="widget">Widget</option> -->
+				<option value="widget">Widget</option>
 			</field>
 			<field name="access_token" type="text" label="MOD_SOCIALMEDIA_ACCESS_TOKEN"></field>
 			<field name="page_id" type="text"  showon="media_type:facebook" label="MOD_SOCIALMEDIA_PAGE_ID"></field>
@@ -107,11 +107,11 @@
 					<field name="masonry_on_mobile_portrait" showon="media_layout:masonry" type="number" default="48" label="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_LABEL" description="MOD_SOCIALMEDIA_MOBILE_PORTRAIT_DESCRIPTION"></field>
 					<field name="masonry_on_mobile" showon="media_layout:masonry" type="number" default="100" label="MOD_SOCIALMEDIA_MOBILE_LABEL" description="MOD_SOCIALMEDIA_MOBILE_DESCRIPTION"></field>
 					<!-- <field name="carousel_slidesperview" showon="media_layout:carousel" type="number" default="4" label="MOD_SOCIALMEDIA_PER_VIEW" descriptuion="MOD_SOCIALMEDIA_PER_VIEW_DESCRIPTION"></field> -->
-					<field name="carousel_loop" default="1" showon="media_layout:carousel" type="radio" label="MOD_SOCIALMEDIA_LOOP" description="MOD_SOCIALMEDIA_LOOP_DESCRIPTION" class="btn-group btn-group-yesno" filter="integer">
+					<field name="carousel_loop" default="1" showon="media_layout:carousel,widget" type="radio" label="MOD_SOCIALMEDIA_LOOP" description="MOD_SOCIALMEDIA_LOOP_DESCRIPTION" class="btn-group btn-group-yesno" filter="integer">
 						<option value="1">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_YES</option>
 						<option value="0">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_NO</option>
 					</field>
-					<field name="carousel_autoplay" default="1" showon="media_layout:carousel" type="radio" label="MOD_SOCIALMEDIA_AUTOPLAY" description="MOD_SOCIALMEDIA_AUTOPLAY_DESCRIPTION" class="btn-group btn-group-yesno" filter="integer">
+					<field name="carousel_autoplay" default="1" showon="media_layout:carousel,widget" type="radio" label="MOD_SOCIALMEDIA_AUTOPLAY" description="MOD_SOCIALMEDIA_AUTOPLAY_DESCRIPTION" class="btn-group btn-group-yesno" filter="integer">
 						<option value="1">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_YES</option>
 						<option value="0">MOD_SOCIALMEDIA_CARD_SYS_BUTTON_NO</option>
 					</field>

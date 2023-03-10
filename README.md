@@ -88,7 +88,7 @@ Web technologies used in the development of this extension
 <!-- INSTALLATION -->
 ## Installation
 
-1. Download the latest version - [mod_socialmedia-1.0.6.zip](https://plycneris.com/updates/joomla/mod_socialmedia/mod_socialmedia-1.0.6.zip)
+1. Download the latest version - [mod_socialmedia-1.0.8.zip](https://plycneris.com/updates/joomla/mod_socialmedia/mod_socialmedia-1.0.8.zip)
 
 2. Install the module in your local Joomla environment.
 

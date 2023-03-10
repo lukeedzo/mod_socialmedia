@@ -36,6 +36,7 @@ const buildScripts = (task, src, dest, filename) => {
   });
 };
 
+buildScripts('build-widget-js', config.js.widget, config.js.dest, 'widget');
 buildScripts('build-default-js', config.js.default, config.js.dest, 'default');
 buildScripts('build-masonry-js', config.js.masonry, config.js.dest, 'masonry');
 buildScripts(

@@ -59,10 +59,10 @@ class SocialMediaStyle extends SocialMedia
 								color: {$text_color}!important;
 								font-size: {$card_text_size}px!important;
 						}
-						.social-medlia-container-{$module_id} .setting-text a {
+						.social-media-container-{$module_id} .setting-text a {
 								color: {$links_color}!important;
 						}
-						.social-medlia-container-{$module_id} .setting-text a::hover {
+						.social-media-container-{$module_id} .setting-text a::hover {
 							color: {$links_hover_color}!important;
 						}
 						.social-media-container-{$module_id} button {
@@ -164,7 +164,22 @@ class SocialMediaStyle extends SocialMedia
                 echo '<script id="social-media-carousel-json-' . $module->id . '" type="application/json">' . json_encode($options) . '</script>';
                 break;
             case 'widget':
-                // Add widget layout-specific styles here
+                $css .= "
+									.social-media-container-{$module_id} .swiper-button-next,.swiper-button-prev.setting-text {
+										color: {$button_color}!important;
+									}
+								";
+
+                $loop = $params->get('carousel_loop');
+                $autoplay = $params->get('carousel_autoplay');
+                $per_view = $params->get('carousel_slidesperview');
+                $options = [
+                    "id" => (int) $module->id,
+                    "loop" => (int) $loop,
+                    "autoplay" => (int) $autoplay,
+                ];
+
+                echo '<script id="social-media-widget-json-' . $module->id . '" type="application/json">' . json_encode($options) . '</script>';
                 break;
         }
 

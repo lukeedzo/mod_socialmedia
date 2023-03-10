@@ -11,7 +11,8 @@ run.task('dev', (cb) => {
       'build-front-css',
       'build-default-js',
       'build-masonry-js',
-      'build-carousel-js'
+      'build-carousel-js',
+      'build-widget-js'
     ),
     'watch'
   );
