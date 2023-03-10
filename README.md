@@ -70,12 +70,10 @@ The Social Media module is a Joomla extension designed to provide a responsive a
 
 ## Layouts demos
 
-<details>
-  <summary>Default</summary>
- 	<img src="readme/demo-default.png" alt="default layout">
-</details>
-
-Others will appear soon.. 
+- [Widget](https://plycneris.com/joomla3example/index.php/module-social-media-widget)
+- [Masonry](https://plycneris.com/joomla3example/index.php)
+- [Default](https://plycneris.com/joomla3example/index.php/module-social-media-default)
+- [Carousel](https://plycneris.com/joomla3example/index.php/module-social-media-carousel)
 
 
 <!-- BUILT WITH -->
