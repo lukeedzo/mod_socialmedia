@@ -4,7 +4,7 @@ import { showMoreButtonTranslate } from './modules/translate.module';
 const { showMoreTextTranslate, showLessTextTranslate } =
   showMoreButtonTranslate();
 
-document.addEventListener('DOMContentLoaded', function () {
+function initSocialMediaMasonry() {
   const grid = document.querySelectorAll('.social-media-masonry__grid');
 
   const msnryArray = [];
@@ -45,4 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-});
+}
+
+document.addEventListener('DOMContentLoaded', initSocialMediaMasonry);
