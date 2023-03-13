@@ -60,10 +60,21 @@
         margin-left: auto;
       }
 
-      margin-left: auto;
-      .icon {
+      &-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
         max-width: 17px;
       }
+
+      &-commnets,
+      &-likes {
+        font-weight: bold;
+        font-size: 12px;
+        color: #444;
+      }
+
+      margin-left: auto;
     }
 
     &-body {
@@ -123,17 +134,4 @@
   display: inline-flex;
   align-items: center;
   margin-right: 10px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.comment-count,
-.like-count {
-  font-weight: bold;
-  font-size: 12px;
-  color: #444;
 }
