@@ -1,7 +1,7 @@
 <?php defined('_JEXEC') or die;
 
 /**
- * @version     CVS: 1.0.0
+ * @version     CVS: 1.0.8
  * @package     Joomla.Modules
  * @subpackage  mod_socialmedia
  *
@@ -47,6 +47,7 @@ $moduleTitle = $params->get('show_module_title');?>
 					</svg>
 				</div>
 				<?php endif;?>
+				<?php if (isset($post->message)): ?>
 				<div class="social-media-default__card-body-content">
 					<div class="social-media-default__card-body-content-container collapsed">
 						<div class="setting-text">
@@ -54,6 +55,7 @@ $moduleTitle = $params->get('show_module_title');?>
 						</div>
 					</div>
 				</div>
+       <?php endif;?>
 			</div>
 		</div>
 		<?php endforeach;?>

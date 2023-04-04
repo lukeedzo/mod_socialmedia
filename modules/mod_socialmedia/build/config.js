@@ -1,6 +1,6 @@
 module.exports = {
   // module version
-  version: '1.0.8',
+  version: '1.1.1',
 
   css: {
     front_src: './src/scss/*.scss',
