@@ -64,7 +64,7 @@ $moduleTitle = $params->get('show_module_title');?>
 									</div>
 								</div>
 							</div>
-							<?php endif: ?>
+							<?php endif;?>
 						</div>
 					</div>
 				</div>
