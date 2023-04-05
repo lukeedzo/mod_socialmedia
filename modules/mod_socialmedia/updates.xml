@@ -4,14 +4,14 @@
 		<description>Social Media module update</description>
 		<element>mod_socialmedia</element>
 		<type>module</type>
-		<version>1.1.1</version>
+		<version>1.1.2</version>
 		<client>site</client>
 		<infourl title="Social Media module update">
 				<![CDATA[ Social Media module update ]]>
 		</infourl>
 		<downloads>
 			<downloadurl type="full" format="zip">
-				<![CDATA[ https://plycneris.com/updates/joomla/mod_socialmedia/mod_socialmedia-1.1.1.zip ]]>
+				<![CDATA[ https://plycneris.com/updates/joomla/mod_socialmedia/mod_socialmedia-1.1.2.zip ]]>
 			</downloadurl>
 		</downloads>
 		<tags>
